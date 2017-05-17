@@ -16,7 +16,7 @@ class SimplePlantUML {
 <script src='//cdn.rawgit.com/markushedvall/plantuml-encoder/aae868f9/dist/plantuml-encoder.min.js'></script>
 <script>(window.RLQ=window.RLQ||[]).push(function(){
 $('uml').each(function() {
-$(this).replaceWith($('<img>').attr('src','http://www.plantuml.com/plantuml/img/'+plantumlEncoder.encode($(this).text())));
+$(this).replaceWith($('<img>').attr('src','//www.plantuml.com/plantuml/img/'+plantumlEncoder.encode($(this).text())));
 })})</script>
 HEREDOC
 );
