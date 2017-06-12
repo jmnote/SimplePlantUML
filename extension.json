@@ -1,0 +1,37 @@
+{
+	"name": "SimplePlantUML",
+	"version": "0.4",
+	"author": [
+		"jmnote"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:SimplePlantUML",
+	"description": "render UML image between <code><nowiki><uml></nowiki></code> and <code><nowiki></uml></nowiki></code>",
+	"license-name": "MIT",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"SimplePlantUML": "SimplePlantUML_body.php"
+	},
+	"callback": "SimplePlantUML::onRegistration",
+	"config": {
+		"SimplePlantUMLUseCDN": true
+	},
+	"ResourceModules": {
+		"ext.SimplePlantUML": {
+			"scripts": [
+				"modules/ext.SimplePlantUML.js"
+			],
+			"styles": [
+				"modules/ext.SimplePlantUML.css"
+			]
+		},
+		"ext.SimplePlantUML.local": {
+			"scripts": [
+				"plantuml-encoder/dist/plantuml-encoder.min.js"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "SimplePlantUML"
+	}
+}
