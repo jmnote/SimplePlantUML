@@ -12,26 +12,18 @@
 		"SimplePlantUML": "SimplePlantUML_body.php"
 	},
 	"callback": "SimplePlantUML::onRegistration",
-	"config": {
-		"SimplePlantUMLUseCDN": true
-	},
 	"ResourceModules": {
 		"ext.SimplePlantUML": {
 			"scripts": [
-				"modules/ext.SimplePlantUML.js"
+				"ext.SimplePlantUML.js"
 			],
 			"styles": [
-				"modules/ext.SimplePlantUML.css"
-			]
-		},
-		"ext.SimplePlantUML.local": {
-			"scripts": [
-				"plantuml-encoder/dist/plantuml-encoder.min.js"
+				"ext.SimplePlantUML.css"
 			]
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "SimplePlantUML"
+		"localBasePath": "modules",
+		"remoteExtPath": "SimplePlantUML/modules"
 	}
 }
