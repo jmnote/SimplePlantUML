@@ -25,5 +25,6 @@
 	"ResourceFileModulePaths": {
 		"localBasePath": "modules",
 		"remoteExtPath": "SimplePlantUML/modules"
-	}
+	},
+	"manifest_version": 2
 }
