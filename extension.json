@@ -9,9 +9,11 @@
 	"license-name": "MIT",
 	"type": "parserhook",
 	"AutoloadClasses": {
-		"SimplePlantUML": "SimplePlantUML_body.php"
+		"SimplePlantUMLHooks": "SimplePlantUMLHooks.php"
 	},
-	"callback": "SimplePlantUML::onRegistration",
+	"Hooks": {
+		"ParserFirstCallInit": "SimplePlantUMLHooks::onParserFirstCallInit"
+	},
 	"ResourceModules": {
 		"ext.SimplePlantUML": {
 			"scripts": [

@@ -1,11 +1,6 @@
 <?php
-class SimplePlantUML {
-
-	public static function onRegistration() {
-		Hooks::register( 'ParserFirstCallInit', __CLASS__ . '::setup' );
-	}
-
-	public static function setup( Parser $parser ) {
+class SimplePlantUMLHooks {
+	public static function onParserFirstCallInit( Parser $parser ) {
 		$parser->setHook( 'uml', __CLASS__ . '::renderUML' );
 	}
 
